@@ -1,0 +1,49 @@
+/* * HTML AND BODY*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* * FONTS */
+
+@font-face {
+    font-family: monoton; 
+    src: url(/fonts/Monoton-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: quicksand; 
+    src: url(/fonts/Quicksand-VariableFont_wght.ttf) format('truetype');
+}
+
+/**HEADER  */
+header {
+    background-color: rgb(49, 49, 80);
+    height: 100vh;
+    color: white;
+    margin: 0px;
+    font-family: monoton;
+    font-size: 100px;
+    font-style: 100px;
+    text-align: center;
+    padding: 50px;
+}
+
+#down-arrow {
+    text-decoration: none;
+    color: white;
+}
+
+/* *MAIN BODY  */
+
+#main {
+    padding: 50px 150px;
+    font-family: quicksand;
+    font-size: 25px;
+    /* font-weight: bolder; */
+}
