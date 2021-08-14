@@ -272,6 +272,11 @@ hr {
     color: rgb(255, 217, 0);
     /* text-decoration: underline rgb(255, 251, 0) dashed; */
     font-size: 45px;
+    transition-duration: 2s;
+}
+
+.headings-small:hover{
+    font-size: 55px;
 }
 
 #right-heading {

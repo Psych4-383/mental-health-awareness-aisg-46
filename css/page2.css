@@ -114,7 +114,6 @@ body {
   display: inline-block;
   margin: 0px;
   animation: colorchange infinite 10s;}
-
 hr {
   height: 2px;
   width: 90%;
@@ -137,8 +136,21 @@ hr {
 #headings-akshat {
   background-color: none;
   text-align: left;
+  transition-duration: 2s;
+  font-size:30px;
   margin: 0px;
   padding: 10px 100px;
   font-family:Georama;
   color: rgb(255, 217, 0);
   text-decoration: underline rgb(255, 251, 0) dashed;}
+
+.donald-duck{
+  text-align: left;
+}
+.donald-duck:hover{
+  font-size: 40px;
+  transition-duration: 2s;
+}
+#headings-akshat:hover {
+  font-size: 40px;
+}
