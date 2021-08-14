@@ -1,0 +1,111 @@
+*{
+	margin:0;
+}
+#loader{
+	height: 100vh;
+	width: 100vw;
+	display: block;
+	background-color: rgb(29, 29, 49);
+	position: fixed;
+	z-index: 20;
+	animation-name: load;
+	animation-duration: 3s;
+	animation-iteration-count:1;
+	animation-fill-mode: forwards;
+}
+#inload{
+	text-align: center;
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	position: absolute;
+	background-color: #FFFFFF;
+	left: 40vw;
+	top: calc(50vh - 150px);
+	display: block;
+	background-image: url(../imgs/amity-logo.jpg);
+	background-size: cover;
+	background-position: center;
+	z-index: 20;
+	animation-name: load;
+	animation-duration: 3s;
+	animation-iteration-count:1;
+	animation-fill-mode: forwards;
+}
+@keyframes load{
+	0%{transform: translate(0,-100vh);}
+	1%{transform: translate(0,0);}
+	80% {transform: translate(0,0);}
+	100%{transform: translate(0,-100vh);}
+}
+#outloader_1{
+	font-family: Roboto;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	background-color: white;
+	position: relative;
+}
+#outloader_1in{
+	height: 100vh;
+	width: 100vw;
+	background-image: url(../imgs/bg2.png);
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#responsible{
+	position: absolute; 
+	height: auto;
+	width: 100vw;
+	right: 0;
+	top: 11vh;
+	font-family: Boogaloo;
+	font-size: 115px;
+	color: rgb(65, 72, 167);
+	font-weight: 900;
+	text-align: center;
+	text-shadow: 3px 4px black;
+	animation:  text1 2s 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	translate: (-100px, 200px);
+	opacity: 0;
+}
+@keyframes text1{
+	0%{opacity: 0; transform: translate(-100px, 200px);}
+	20%{transform: rotateZ(-90deg);}
+	90%{transform: rotateZ(450deg);}
+	100%{opacity: 1; transform: translate(0,0);}
+}
+#sub{
+	position: absolute;
+	height: 33px;
+	width: 0vw;
+	font-family: Comfortaa;
+	font-size: 30px;
+	top: 60vh;
+	left: 30vw;
+	color: rgb(0, 255, 149);
+	text-shadow: 0.5px 1px rgb(98, 98, 98);
+	animation: text2 5s 5s steps(82, end) infinite,
+    blink-caret .75s step-end infinite;
+    animation-fill-mode: forwards;
+	overflow: hidden;
+	border-right: 1.5px solid transparent;
+	white-space: nowrap;
+    font-weight: bolder;
+}
+@keyframes text2{
+	0%{width: 0;}
+	70%{width: 39vw;}
+	90%{width: 39vw;}
+	100%{width: 0;}
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: yellow;}
+}

@@ -1,9 +1,22 @@
 /* * HTML AND BODY*/
-
+@font-face{
+    src: url(/fonts/Bangers-Regular.ttf);
+    font-family: Bangers;
+  }
+  @font-face{
+    src: url(/fonts/OpenSans-LightItalic.ttf);
+    font-family: Open Sans;
+  }
+  @font-face{
+    src: url(/fonts/Acme-Regular.ttf);
+    font-family: Acme;
+  }
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #1a1733;
+    animation-name: colorchange;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
     color: white;
 }
 
@@ -22,16 +35,6 @@ html {
     font-family: quicksand; 
     src: url(/fonts/Quicksand-VariableFont_wght.ttf) format('truetype');
 }
-
-/* *MAIN BODY  */
-
-#main {
-    padding: 50px 150px;
-    font-family: quicksand;
-    font-size: 25px;
-    /* font-weight: bolder; */
-}
-
 
 /* *Header  */
 
@@ -54,117 +57,7 @@ html {
 	background: #f1f1f1;
 	border-radius: 5px;
 }
-*{
-	margin:0;
-}
-#loader{
-	height: 100vh;
-	width: 100vw;
-	display: block;
-	background-color: rgb(29, 29, 49);
-	position: fixed;
-	z-index: 20;
-	animation-name: load;
-	animation-duration: 3s;
-	animation-iteration-count:1;
-	animation-fill-mode: forwards;
-}
-#inload{
-	text-align: center;
-	height: 250px;
-	width: 250px;
-	border-radius: 50%;
-	position: absolute;
-	background-color: #FFFFFF;
-	left: 40vw;
-	top: calc(50vh - 150px);
-	display: block;
-	background-image: url(../imgs/amity-logo.jpg);
-	background-size: cover;
-	background-position: center;
-	z-index: 20;
-	animation-name: load;
-	animation-duration: 3s;
-	animation-iteration-count:1;
-	animation-fill-mode: forwards;
-}
-@keyframes load{
-	0%{transform: translate(0,-100vh);}
-	1%{transform: translate(0,0);}
-	80% {transform: translate(0,0);}
-	100%{transform: translate(0,-100vh);}
-}
-#outloader_1{
-	font-family: Roboto;
-	height: 100vh;
-	width: 100vw;
-	overflow: hidden;
-	background-color: white;
-	position: relative;
-}
-#outloader_1in{
-	height: 100vh;
-	width: 100vw;
-	background-image: url(../imgs/bg6.png);
-	background-size: cover;
-	background-position: center;
-	overflow: hidden;
-	background-attachment: fixed;
-    background-repeat: no-repeat;
-    position: relative;
-}
-#responsible{
-	position: absolute; 
-	height: auto;
-	width: 100vw;
-	right: 0;
-	top: 11vh;
-	font-family: Boogaloo;
-	font-size: 115px;
-	color: orange;
-	font-weight: 900;
-	text-align: center;
-	text-shadow: 3px 4px black;
-	animation:  text1 2s 3s;
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
-	translate: (-100px, 200px);
-	opacity: 0;
-}
-@keyframes text1{
-	0%{opacity: 0; transform: translate(-100px, 200px);}
-	20%{transform: rotateZ(-90deg);}
-	90%{transform: rotateZ(450deg);}
-	100%{opacity: 1; transform: translate(0,0);}
-}
-#sub{
-	position: absolute;
-	height: 33px;
-	width: 0vw;
-	font-family: Boogaloo;
-	font-size: 30px;
-	top: 60vh;
-	left: 30vw;
-	color: red;
-	text-shadow: 0.5px 1px yellow;
-	animation: text2 5s 5s steps(82, end) infinite,
-    blink-caret .75s step-end infinite;
-    animation-fill-mode: forwards;
-	overflow: hidden;
-	border-right: 1.5px solid transparent;
-	white-space: nowrap;
-    font-weight: bold;
-}
-@keyframes text2{
-	0%{width: 0;}
-	70%{width: 38vw;}
-	90%{width: 38vw;}
-	100%{width: 0;}
-}
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
+
 #link{
 	height: auto;
 	width: 100vw;
@@ -239,7 +132,6 @@ footer{
 nav {
     position: fixed;
     z-index: 3;
-    width: 100%;
     top: 0;
     left: 0;
     margin: 0px;
@@ -247,16 +139,16 @@ nav {
 }
 
 #nav-ul {
-    /* display: none; */
-    width: 17%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
-    background-color: rgb(40, 26, 73);
+    background-color: rgb(0, 0, 0);
     height: 100vh;
-    padding: 40px;
+    padding: 20px;
 }
 .nav-li {
+    transition-duration: 2s;
     display: inline-block;
     margin: 10px;
     padding: 10px ;
@@ -265,6 +157,8 @@ nav {
     align-items: center;
     border-bottom: 3px dashed blue;
     font-family: 'courgette';
+    font-weight: lighter;
+
     font-size: 20px;
 }
 
@@ -289,17 +183,29 @@ a {
     text-decoration: none;
     color: white;
 }
+
+#nav-hamburger {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    font-size: 30px;
+    width: 17%;
+    cursor: pointer;
+}
+
+/* *CONTENT  */
+
 .para {
     font-family: 'merriweather';
     font-size: 20px;
-    color: black;
+    color: whitesmoke;
     padding: 25px;
     width: 60%;
     margin: 0px;
 }
 
 .para:hover{
-    color: red;
+    color: rgb(0, 255, 255);
 }
 
 #first-para {
@@ -340,70 +246,24 @@ hr {
     background-color: rgb(255, 72, 0);
 }
 
-nav {
-    position: fixed;
-    z-index: 3;
-    width: 100%;
-    top: 0;
-    left: 0;
-    margin: 0px;
-    padding: 0px;
-}
 
-#nav-ul {
-    display: none;
-    width: 17%;
-    background-color: red;
-    height: 100vh;
-    padding: 40px;
-}
-.nav-li {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px ;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 3px dashed blue;
-    font-family: 'courgette';
-    font-size: 20px;
-}
-
-.nav-item {
-    display: inline-block;
-}
-
-
-.nav-img {
-    border: none;
-    border-radius: 50%;
-    margin: 10px 10px 0px 10px;
-    width: 50px;
-}
-
-.nav-item:hover{
-    animation-name: shake;
-    animation-duration: 1s;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
 
 #second-para {
     float: right;
     margin: 0px;
 }
+#third-para {
+    float: left;
+    margin: 0px;
+}
 .headings-small {
-    background-color: rgb(233, 155, 155);
+    background-color: rgb(0, 0, 0);
     text-align: left;
     margin: 0px;
     padding: 10px 100px;
-    font-family:'courgette';
-    color: rgb(250, 3, 3);
-    text-decoration: underline blue dashed;
+    font-family:'quicksand';
+    color: rgb(255, 217, 0);
+    /* text-decoration: underline rgb(255, 251, 0) dashed; */
     font-size: 45px;
 }
 
@@ -417,41 +277,6 @@ a {
     list-style-type: symbols('&part;');
     opacity: 80%;
 }
-
-#video-animation-2 {
-    float: left;
-    margin-left: 30px;
-    animation-name: FromLeft;
-    position: relative;
-    animation-duration: 3s;
-    animation-delay: 4s;
-}
-
-#video-animation {
-    animation-name: FromRight;
-    position: relative;
-    animation-duration: 3s;
-    animation-delay: 4s;
-}
-
-@keyframes FromLeft {
-    from {
-        left: -2000px;
-    }
-    to {
-        left: 0px;
-    }
-}
-
-@keyframes FromRight {
-    from {
-        right: -1000px;
-    }
-    to {
-        right: 20px;
-    }
-}
-
 #headings-tiny {
     text-align: left;
     margin: 0px;
@@ -464,23 +289,18 @@ a {
     clear: both;
     display: table;
 }
-.statistic-image-1{
-    /* background-color: rgba(243, 202, 202, 0.479); */
-    overflow: hidden;
-    position: relative;
-    animation-name: colorchange;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    
-}
 
 @keyframes colorchange {
-    0% {background-color: rgb(255, 202, 202);}
-    14% {background-color: rgb(255, 218, 176);}
-    28% {background-color: rgb(247, 255, 177);}
-    42% {background-color: rgb(188, 255, 185);}
-    56% {background-color: rgb(176, 246, 255);}
-    70% {background-color: rgb(188, 183, 255);}
-    84% {background-color: rgb(241, 187, 248);}
-    100% {background-color: rgb(255, 176, 193);}
+    0% {background-color: rgb(3, 0, 41);}
+    14% {background-color: rgb(12, 6, 63);}
+    28% {background-color: rgb(22, 18, 80);}
+    42% {background-color: rgb(35, 27, 71);}
+    56% {background-color: rgb(35, 27, 71);}
+    70% {background-color: rgb(22, 6, 80);}
+    84% {background-color: rgb(12, 6, 63);}
+    100% {background-color: rgb(3, 0, 41);}
+}
+
+#container {
+    padding-left: 70px;
 }
