@@ -24,39 +24,36 @@
 	right: 0;
 	top: 11vh;
 	font-family: Boogaloo;
-	/* font-size: 115px; */
+	font-size: 115px;
 	font-weight: 900;
 	text-align: center;
 	text-shadow: 3px 4px black;
-	animation:  text1 6s, pulse 3s;
+	animation:  text1 6s;
 	animation-iteration-count: infinite;
 	animation-fill-mode: forwards;
 	translate: (-100px, 200px);
 	opacity: 100%;
+    box-shadow: 15px 15px 50px rgba(0,0,0,0.9);	
 }
 @keyframes text1{
-	0%{color: rgba(255, 192, 203, 0.664);}
-	10%{color: rgba(255, 0, 0, 0.712);}
-	20%{color: rgba(255, 166, 0, 0.705);}
-	30%{color: rgba(255, 255, 0, 0.705);}
-	40%{color: rgba(0, 128, 0, 0.705);}
-	50%{color: rgba(0, 0, 255, 0.678);}
-	60%{color: rgba(76, 0, 130, 0.671);}
-	70%{color: rgba(238, 130, 238, 0.705);}
-	80%{color: rgba(165, 42, 42, 0.678);}
-	90%{color: rgba(0, 0, 0, 0.651);}
-	100%{color: rgba(165, 92, 155, 0.726);}
+	0% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        box-shadow: 15px 15px 50px rgba(0,0,0,0.9);
+    }
+    33% { 
+        border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+        box-shadow: -10px -5px 50px rgba(0,0,0,0.9);
+    }
+    66% {
+        border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+        box-shadow: -10px -5px 50px rgba(0,0,0,0.9);
+    }
+    100% {
+        border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+        box-shadow: 15px 15px 50px rgba(0,0,0,0.9);		
+    }
 }
 
-@keyframes pulse{
-	0%{font-size: 115px;}
-	10.6%{font-size: 100px;}
-	33.2%{font-size: 115px;}
-	37.8%{font-size: 100px;}
-	66.4%{font-size: 115px;}
-	75%{font-size: 100px;}
-	100%{font-size: 115px;}
-}
 #sub{
 	position: absolute;
 	height: 33px;

@@ -13,14 +13,15 @@
 #outloader_1in{
 	height: 100vh;
 	width: 100vw;
-	background-image: url(../imgs/bg2.png);
-	background-size: cover;
+	background-image: url(../imgs/bg4.png);
+	background-size: contain	;
 	background-position: center;
 	overflow: hidden;
 	background-attachment: fixed;
     background-repeat: no-repeat;
     position: relative;
 }
+
 #responsible{
 	position: absolute; 
 	height: auto;
@@ -54,7 +55,7 @@
 	top: 60vh;
 	left: 30vw;
 	color: rgb(0, 255, 149);
-	text-shadow: 0.5px 1px rgb(98, 98, 98);
+	text-shadow: 3px 3px rgb(0, 0, 0);
 	animation: text2 5s 5s steps(82, end) infinite,
     blink-caret .75s step-end infinite;
     animation-fill-mode: forwards;

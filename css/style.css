@@ -148,6 +148,7 @@ nav {
     padding: 20px;
 }
 .nav-li {
+    height: 10vh;
     transition-duration: 2s;
     display: inline-block;
     margin: 10px;
@@ -155,9 +156,9 @@ nav {
     display: flex;
 	justify-content: space-between;
     align-items: center;
-    font-family: 'courgette';
-    font-weight: lighter;
-    font-size: 20px;
+    font-family: 'comfortaa';
+    font-weight: 500;
+    font-size: 23px;
 }
 
 .nav-item {
@@ -247,9 +248,9 @@ body {
 
 hr {
     height: 2px;
-    width: 90%;
-    border-radius: 60%;
-    background-color: rgb(255, 72, 0);
+    width: 80%;
+    border-radius: 90%;
+    background-color: rgb(255, 255, 255);
 }
 
 
