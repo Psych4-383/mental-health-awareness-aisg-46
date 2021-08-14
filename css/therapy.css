@@ -1,7 +1,3 @@
-*{
-	margin:0;
-}
-
 #outloader_1{
 	font-family: Roboto;
 	height: 100vh;
@@ -13,7 +9,7 @@
 #outloader_1in{
 	height: 100vh;
 	width: 100vw;
-	background-image: url(../imgs/bg2.png);
+	background-image: url(/imgs/bg10.png);
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
@@ -72,4 +68,8 @@
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: yellow;}
+}
+
+#nav-ul {
+    margin: 0px;
 }
