@@ -29,7 +29,7 @@ div#w1{
     text-shadow: 5px 5px black, -2px -1px black;
     position: absolute;
     animation: slidefade 3s ease-in-out;
-    animation-delay: 2.5s;
+    animation-delay: 0.5s;
 }
 div#sub_cont{
     width: 100vw;
@@ -86,4 +86,34 @@ div#showright{
 }
 #headings-akshat:hover {
   font-size: 32px;
+}
+
+
+.img-p-img {
+  width: calc(100vw - 80px);
+}
+
+.img-p:hover > .img-p-img, .para:hover ~ img {
+  opacity: 0.2;
+  transition-duration: 1s;
+}
+
+.img-p:hover > p, .para:hover {
+  font-size: 35px;
+  opacity: 1;
+}
+
+.img-p {
+  position: relative;
+text-align: center;
+color: white;
+}
+
+.para {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
 }

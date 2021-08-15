@@ -31,7 +31,7 @@
 	animation:  text1 3s;
 	animation-fill-mode: forwards;
 	translate: (-100px, 200px);
-	animation-delay: 2.5s;
+	animation-delay: 0.5s;
 	opacity: 100%;
 }
 @keyframes text1{
@@ -50,7 +50,7 @@
 	left: 30vw;
 	color: rgb(255, 255, 255);
 	text-shadow: 2px 2px rgb(30, 30, 30);
-	animation: text2 5s 5s steps(82, end) infinite,
+	animation: text2 5s 3s steps(82, end) infinite,
     blink-caret .75s step-end infinite;
     animation-fill-mode: forwards;
 	overflow: hidden;

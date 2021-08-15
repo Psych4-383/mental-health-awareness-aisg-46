@@ -56,7 +56,7 @@
 	left: 30vw;
 	color: rgb(162, 159, 206);
 	text-shadow: 2px 2px rgba(0, 0, 0, 0.699);
-	animation: text2 5s 5s steps(82, end) infinite,
+	animation: text2 5s 3s steps(82, end) infinite,
     blink-caret .75s step-end infinite;
     animation-fill-mode: forwards;
 	overflow: hidden;
@@ -73,4 +73,34 @@
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: yellow;}
+}
+
+.para{
+	opacity: 1;
+	position: absolute;
+	height: auto;
+	width: 60vw;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.534);
+	margin: 35vh 20vw 35vh 15vw;
+	font-size: 25px;
+}
+
+.bg{
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 1;
+}
+
+.bg-1{
+	background-image: url(/imgs/pg1-1.png);
+}
+
+.bg-2 {
+	background-image: url(/imgs/pg1-2.png);
+}
+
+.bg-3 {
+	background-image: url(/imgs/pg1-3.png);
 }

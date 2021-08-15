@@ -207,17 +207,15 @@ a {
     color: whitesmoke;
     padding: 25px;
     width: 60%;
+    text-shadow: 3px 3px 3px black ;
     margin: 0px;
     transition-duration: 1s;
-}
 
-.para:hover{
-    text-shadow: 4px 4px 3px black;
-    color: rgb(174, 179, 243);
 }
 
 #first-para {
     float: left;
+    width: 70%;
 }
 
 header{
@@ -254,15 +252,15 @@ hr {
     background-color: rgb(255, 255, 255);
 }
 
-
-
 #second-para {
     float: right;
     margin: 0px;
+    width: 70%;
 }
-#third-para {
+#third-para, #fourth-para {
     float: left;
     margin: 0px;
+    width: 70%;
 }
 .headings-small {
     background-color: rgb(0, 0, 0);
@@ -326,7 +324,7 @@ hr {
 	position: fixed;
 	z-index: 20;
 	animation-name: load;
-	animation-duration: 3s;
+	animation-duration: 4s;
 	animation-iteration-count:1;
 	animation-fill-mode: forwards;
 }
@@ -340,8 +338,9 @@ hr {
 	left: 40vw;
 	top: calc(50vh - 150px);
 	display: block;
-	background-image: url(../imgs/amity-logo.jpg);
+	background-image: url(../imgs/loader-gif.gif);
 	background-size: cover;
+    background-repeat: no-repeat;
 	background-position: center;
 	z-index: 20;
 	animation-name: load;
@@ -355,3 +354,5 @@ hr {
 	80% {transform: translate(0,0);}
 	100%{transform: translate(0,-100vh);}
 }
+
+
