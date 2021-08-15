@@ -72,3 +72,33 @@
 #nav-ul {
     margin: 0px;
 }
+
+
+.img-p-img {
+	width: calc(100vw - 80px);
+  }
+  
+  .img-p:hover > .img-p-img, .para:hover ~ img {
+	opacity: 0.2;
+	transition-duration: 1s;
+  }
+  
+  .img-p:hover > p, .para:hover {
+	font-size: 35px;
+	opacity: 1;
+  }
+  
+  .img-p {
+	position: relative;
+  text-align: center;
+  color: white;
+  }
+  
+  .para {
+	position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  opacity: 0;
+	  transform: translate(-50%, -50%);
+	  font-size: 35px;
+  }
