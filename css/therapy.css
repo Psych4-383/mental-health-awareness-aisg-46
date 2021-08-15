@@ -9,7 +9,7 @@
 #outloader_1in{
 	height: 100vh;
 	width: 100vw;
-	background-image: url(/imgs/bg5.png);
+	background: linear-gradient(rgba(8, 8, 80, 0.781), rgba(9, 9, 85, 0.767)), url(/imgs/bg5.png);
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
@@ -20,25 +20,24 @@
 #responsible{
 	position: absolute; 
 	height: auto;
-	width: 50vw;
+	width: 100vw;
 	right: 0;
 	top: 11vh;
 	font-family: Boogaloo;
 	font-size: 115px;
-	color: rgb(65, 72, 167);
+	color: rgb(231, 232, 246);
 	font-weight: 900;
 	text-align: center;
 	text-shadow: 3px 4px black;
-	animation:  text1 3s;
+	animation:  text1 1s;
 	animation-delay: 3s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 	translate: (-100px, 200px);
-	opacity: 0;
 }
 @keyframes text1{
-	0%{width: 0%; font-size: 30px; opacity: 100%;}
-	100%{width: 50vw; margin: 10px 25vw; font-size: 115px; opacity:100%;}
+	0%{text-shadow: -1px -1px 0 black, -1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black}
+	100%{text-shadow: -5px -5px 0 black, -5px -5px 0 black, -5px 5px 0 black, 5px 5px 0 black}
 }
 
 #sub{
@@ -49,7 +48,7 @@
 	font-size: 30px;
 	top: 60vh;
 	left: 30vw;
-	color: rgb(0, 255, 149);
+	color: rgb(157, 188, 209);
 	text-shadow: 2px 2px rgb(30, 30, 30);
 	animation: text2 5s 5s steps(82, end) infinite,
     blink-caret .75s step-end infinite;

@@ -142,19 +142,18 @@ nav {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     background-color: rgb(0, 0, 0);
     height: 100vh;
-    padding: 20px;
+    padding: 10px;
 }
 .nav-li {
-    height: 10vh;
+    height: 4vh;
     transition-duration: 2s;
     display: inline-block;
     margin: 10px;
     padding: 10px ;
     display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
     align-items: center;
     font-family: 'comfortaa';
     font-weight: 500;
@@ -209,10 +208,12 @@ a {
     padding: 25px;
     width: 60%;
     margin: 0px;
+    transition-duration: 1s;
 }
 
 .para:hover{
-    color: rgb(0, 255, 255);
+    text-shadow: 4px 4px 3px black;
+    color: rgb(174, 179, 243);
 }
 
 #first-para {
@@ -269,7 +270,7 @@ hr {
     margin: 0px;
     padding: 10px 100px;
     font-family:'quicksand';
-    color: rgb(255, 217, 0);
+    color: rgb(117, 225, 235);
     /* text-decoration: underline rgb(255, 251, 0) dashed; */
     font-size: 45px;
     transition-duration: 2s;

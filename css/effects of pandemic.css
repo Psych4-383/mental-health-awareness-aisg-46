@@ -9,7 +9,7 @@
 #outloader_1in{
 	height: 100vh;
 	width: 100vw;
-	background-image: url(/imgs/bg7.png);
+	background: linear-gradient(rgba(3, 4, 70, 0.623), rgba(2, 18, 92, 0.637)), url(/imgs/bg3.jpg);
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
@@ -20,8 +20,9 @@
 #responsible{
 	position: absolute; 
 	height: auto;
-	width: 100vw;
+	width: 50vw;
 	right: 0;
+	margin: 10px 25vw;
 	top: 11vh;
 	font-family: Boogaloo;
 	font-size: 115px;
@@ -33,24 +34,24 @@
 	animation-fill-mode: forwards;
 	translate: (-100px, 200px);
 	opacity: 100%;
-    box-shadow: 15px 15px 50px rgba(0,0,0,0.9);	
+    box-shadow: 15px 15px 20px black;	
 }
 @keyframes text1{
 	0% {
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-        box-shadow: 15px 15px 50px rgba(0,0,0,0.9);
+        box-shadow: 15px 15px 20px black;
     }
     33% { 
         border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
-        box-shadow: -10px -5px 50px rgba(0,0,0,0.9);
+        box-shadow: -10px -5px 20px black;
     }
     66% {
         border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
-        box-shadow: -10px -5px 50px rgba(0,0,0,0.9);
+        box-shadow: -10px -5px 20px black;
     }
     100% {
         border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
-        box-shadow: 15px 15px 50px rgba(0,0,0,0.9);		
+        box-shadow: 15px 15px 20px black;		
     }
 }
 
@@ -62,8 +63,8 @@
 	font-size: 30px;
 	top: 60vh;
 	left: 30vw;
-	color: rgb(0, 255, 149);
-	text-shadow: 2px 2px rgb(30, 30, 30);
+	color: rgb(255, 255, 255);
+	text-shadow: 4px 4px 2px rgb(30, 30, 30);
 	animation: text2 5s 5s steps(82, end) infinite,
     blink-caret .75s step-end infinite;
     animation-fill-mode: forwards;

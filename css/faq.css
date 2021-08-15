@@ -9,7 +9,7 @@
 #outloader_1in{
 	height: 100vh;
 	width: 100vw;
-	background-image: url(/imgs/bg7.png);
+	background: linear-gradient(rgba(7, 2, 77, 0.5), rgba(3, 7, 70, 0.5)), url(/imgs/bg7.png);
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
@@ -28,34 +28,17 @@
 	font-weight: 900;
 	text-align: center;
 	text-shadow: 3px 4px black;
-	animation:  text1 6s, pulse 3s;
-	animation-iteration-count: infinite;
+	animation:  text1 3s;
 	animation-fill-mode: forwards;
 	translate: (-100px, 200px);
+	animation-delay: 2.5s;
 	opacity: 100%;
 }
 @keyframes text1{
-	0%{color: rgba(255, 192, 203, 0.664);}
-	10%{color: rgba(255, 0, 0, 0.712);}
-	20%{color: rgba(255, 166, 0, 0.705);}
-	30%{color: rgba(255, 255, 0, 0.705);}
-	40%{color: rgba(0, 128, 0, 0.705);}
-	50%{color: rgba(0, 0, 255, 0.678);}
-	60%{color: rgba(76, 0, 130, 0.671);}
-	70%{color: rgba(238, 130, 238, 0.705);}
-	80%{color: rgba(165, 42, 42, 0.678);}
-	90%{color: rgba(0, 0, 0, 0.651);}
-	100%{color: rgba(165, 92, 155, 0.726);}
-}
-
-@keyframes pulse{
-	0%{font-size: 115px;}
-	10.6%{font-size: 100px;}
-	33.2%{font-size: 115px;}
-	37.8%{font-size: 100px;}
-	66.4%{font-size: 115px;}
-	75%{font-size: 100px;}
-	100%{font-size: 115px;}
+	0%{font-size: 0px;}
+	100%{
+		font-size: 115px;
+	}
 }
 #sub{
 	position: absolute;
@@ -65,7 +48,7 @@
 	font-size: 30px;
 	top: 60vh;
 	left: 30vw;
-	color: rgb(0, 255, 149);
+	color: rgb(255, 255, 255);
 	text-shadow: 2px 2px rgb(30, 30, 30);
 	animation: text2 5s 5s steps(82, end) infinite,
     blink-caret .75s step-end infinite;
@@ -111,5 +94,5 @@
 
 .img-faq {
 	width: 60%;
-	box-shadow: 20px 20px 5px 10px rgba(0, 0, 0, 0.561)	;
+	box-shadow: 20px 20px 15px 10px rgba(0, 0, 0, 0.561)	;
 }

@@ -14,7 +14,7 @@
 	height: 100vh;
 	width: 100vw;
 	background-image: url(../imgs/bg4.png);
-	background-size: contain	;
+	background-size: cover;
 	background-position: center;
 	overflow: hidden;
 	background-attachment: fixed;
@@ -30,7 +30,7 @@
 	top: 11vh;
 	font-family: Boogaloo;
 	font-size: 115px;
-	color: rgb(65, 72, 167);
+	color: rgb(162, 168, 250);
 	font-weight: 900;
 	text-align: center;
 	text-shadow: 3px 4px black;
@@ -54,8 +54,8 @@
 	font-size: 30px;
 	top: 60vh;
 	left: 30vw;
-	color: rgb(0, 255, 149);
-	text-shadow: 3px 3px rgb(0, 0, 0);
+	color: rgb(162, 159, 206);
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.699);
 	animation: text2 5s 5s steps(82, end) infinite,
     blink-caret .75s step-end infinite;
     animation-fill-mode: forwards;
